@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+
+#header {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #1a1a1a;
+}
+
+
+.all {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+
+#button-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+
+.btn-action {
+    display: block; 
+    text-decoration: none; 
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.1s;
+}
+
+
+.btn-action:hover {
+    background-color: #444;
+    transform: translateY(-2px); 
+}
+
+.btn-action:active {
+    transform: translateY(0);
+}
+
+
+.btn-action[href*="del"], .btn-action[href*="build_del"] {
+    background-color: 444;
+}
+
+.btn-action[href*="del"]:hover, .btn-action[href*="build_del"]:hover {
+    background-color: #444; 
+}
+
+
+#menu {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    background-color: #333;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu img {
+    width: 100%;
+    filter: invert(1);
+}
+
+
+@media (max-width: 480px) {
+    .all {
+        margin: 20px auto;
+        padding: 20px;
+    }
+}

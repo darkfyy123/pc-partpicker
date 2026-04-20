@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>PC PartPicker</title>
+  <link rel="stylesheet" href="/static/style/partpicker.css">
+</head>
+<body>
+  <h1>PC PartPicker</h1>
+
+  <div id="menu"><a href="{{ url_for('web.home') }}"><img src="/static/img/MENU.png"></a></div>
+  <div id="alert-msg"></div>
+
+
+  <div class="container-search">
+    <div class="search-column">
+
+      <div class="search-card">
+        <label>CPU</label>
+        <input class="search-input" type="text" id="searchCPU" placeholder="Hledej CPU...">
+        <div class="suggestions-wrap"><div id="suggestionsCPU" class="suggestions-list"></div></div>
+      </div>
+
+      <div class="search-card">
+        <label>GPU</label>
+        <input class="search-input" type="text" id="searchGPU" placeholder="Hledej GPU...">
+        <div class="suggestions-wrap"><div id="suggestionsGPU" class="suggestions-list"></div></div>
+      </div>
+
+      <div class="search-card">
+        <label>RAM</label>
+        <input class="search-input" type="text" id="searchRAM" placeholder="Hledej RAM...">
+        <div class="suggestions-wrap"><div id="suggestionsRAM" class="suggestions-list"></div></div>
+      </div>
+
+      <div class="search-card">
+        <label>MB</label>
+        <input class="search-input" type="text" id="searchMB" placeholder="Hledej MB...">
+        <div class="suggestions-wrap"><div id="suggestionsMB" class="suggestions-list"></div></div>
+      </div>
+
+
+    <div class="search-card">
+      <label>DRIVE</label>
+      <input class="search-input" type="text" id="searchDRIVE" placeholder="Hledej DRIVE...">
+      <div class="suggestions-wrap"><div id="suggestionsDRIVE" class="suggestions-list"></div></div>
+    </div>
+
+    <div class="search-card">
+      <label>FAN</label>
+      <input class="search-input" type="text" id="searchFAN" placeholder="Hledej FAN...">
+      <div class="suggestions-wrap"><div id="suggestionsFAN" class="suggestions-list"></div></div>
+    </div>
+
+    <div class="search-card">
+      <label>PSU</label>
+      <input class="search-input" type="text" id="searchPSU" placeholder="Hledej PSU...">
+      <div class="suggestions-wrap"><div id="suggestionsPSU" class="suggestions-list"></div></div>
+    </div>
+
+    <div class="search-card">
+      <label>CASE</label>
+      <input class="search-input" type="text" id="searchCASE" placeholder="Hledej CASE...">
+      <div class="suggestions-wrap"><div id="suggestionsCASE" class="suggestions-list"></div></div>
+    </div>
+
+    </div> 
+  </div> 
+
+
+
+  <div id="compare" class="compare">Kompatibilita</div>
+
+
+  <div class="popup" id="popup">
+    <div class="popup_header">
+      Kompatibilita komponentů
+    </div>
+    <div id="popup_text" class="popup_text">
+    </div>
+    <div id="CLOSESAVE">
+      <div id="popup_close" class="popup_close">OK</div>
+      <div id="save_wrapper" class="hiden">
+        <div class="divider"></div>
+        <div id="popup_save" class="popup_save">Uložit</div>
+      </div>
+    </div>
+
+
+  </div>
+<div id="overlay" class=""></div>
+
+<div id="sign"><p>Vít  Kotinský, P4</p></div>
+
+
+
+
+
+  <script src="/static/script/partpicker.js"></script>
+</body>
+</html>

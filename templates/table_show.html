@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prohlížeč komponentů</title>
+    <link rel="stylesheet" href="/static/style/table_show.css">
+</head>
+<body>
+
+    <h1>Knihovna komponentů</h1>
+
+    <div id="menu">
+        <a href="{{ url_for('web.builds_edit') }}">
+            <img src="/static/img/MENU.png" alt="Zpět">
+        </a>
+    </div>
+
+    <div class="container-search">
+        <div class="search-column">
+            <div class="search-card">
+                <label for="type">Vyberte kategorii komponentů</label>
+                <select id="type" class="search-input">
+                    <option value="">-- Vyberte --</option>
+                    <option value="CPU">Procesory (CPU)</option>
+                    <option value="GPU">Grafické karty (GPU)</option>
+                    <option value="MB">Základní desky (MB)</option>
+                    <option value="RAM">Operační paměti (RAM)</option>
+                    <option value="PSU">Zdroje (PSU)</option>
+                    <option value="FAN">Chladiče (FAN)</option>
+                    <option value="CASE">Skříně (CASE)</option>
+                    <option value="DRIVE">Pevné disky (DRIVE)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+        <div id="component-container">
+            <p class="empty-msg">Vyberte kategorii pro zobrazení dostupných dílů.</p>
+        </div>
+    </div>
+
+    <div id="sign"><p>Vít Kotinský, P4</p></div>
+
+    <script src="/static/script/table_show.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC PartPicker - Moje Sestavy</title>
+    <link rel="stylesheet" href="/static/style/builds.css">
+</head>
+<body>
+
+    <h1>Uložené PC sestavy</h1>
+
+    <div id="menu">
+        <a href="{{ url_for('web.home') }}">
+            <img src="/static/img/MENU.png" alt="Zpět">
+        </a>
+    </div>
+
+    <div class="main-wrapper">
+        <div id="component-container">
+            </div>
+    </div>
+
+    <div id="sign"><p>Vít Kotinský, P4</p></div>
+
+    <script src="/static/script/builds.js"></script>
+</body>
+</html>

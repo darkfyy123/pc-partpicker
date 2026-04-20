@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/build_del.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu"><a href="{{ url_for('web.builds_edit') }}"><img src="/static/img/MENU.png"></a></div>
+    <div id="alert-msg"></div>
+    <div class="all">
+        <div id="header">Zadej Sestavu</div>
+        
+        <div id="basic">Zadej ID Sestavy: <input type="number" id="build_id" placeholder="ID Sestavy"></div>
+
+        <div id="del">Smazat</div>
+    </div>
+
+    <script src="/static/script/build_del.js"></script>
+</body>
+</html>

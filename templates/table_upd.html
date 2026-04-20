@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/table_upd.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu"><a href="{{ url_for('web.builds_edit') }}"><img src="/static/img/MENU.png"></a></div>
+    <div id="alert-msg"></div>
+    <div class="all">
+        <div id="header">Zadej komponent</div>
+            <div id="basic">Brand <input id="brand"> Model <input id="model"> 
+            <label for="type">Type</label>
+            <select name="type" id="type">
+                <option value=""></option>
+                <option value="CPU">CPU</option>
+                <option value="GPU">GPU</option>
+                <option value="MB">MB</option>
+                <option value="RAM">RAM</option>
+                <option value="PSU">PSU</option>
+                <option value="FAN">FAN</option>
+                <option value="CASE">CASE</option>
+                <option value="DRIVE">DRIVE</option>
+            </select></div>
+                <div id="info">
+                    <div id="cpu"> Socket <input id="cpu_socket"><br> Spotřeba <input id="cpu_usage"></div>
+                    <div id="gpu"> Délka <input id="gpu_lenght"><br> Šířka (sloty) <input id="gpu_slots"><br> Spotřeba <input id="gpu_usage"></div>
+                    <div id="mb"> Socket <input id="mb_socket"><br> Ram type <input id="mb_ram"><br> Drive type <input id="mb_drive"><br> MB type <input id="mb_type"></div>
+                    <div id="ram"> Type <input id="ram_type"><br> Spotřeba <input id="ram_usage"></div>
+                    <div id="psu"> Wattage <input id="psu_wattage"></div>
+                    <div id="fan"> Socket <input id="fan_socket"><br> Výška <input id="fan_height"><br> Spotřeba <input id="fan_usage"></div>
+                    <div id="case"> MB type <input id="case_mb_type"><br> Max. délka gpu <input id="case_gpu_lenght"><br> Počet slotů <input id="case_slots"><br> Max. výška chladiče <input id="case_fan_height"></div>
+                    <div id="drive"> Type<input id="drive_type"><br> Spotřeba <input id="drive_usage"></div>
+                </div>
+
+            <div id="add">Změň</div>
+    </div>
+    <script src="/static/script/table_upd.js"></script>
+</body>
+</html>

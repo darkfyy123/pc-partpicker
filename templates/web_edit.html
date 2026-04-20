@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Správa tabulek</title>
+    <link rel="stylesheet" href="/static/style/web_edit.css">
+</head>
+<body>
+    <div id="menu"><a href="{{ url_for('web.home') }}"><img src="/static/img/MENU.png"></a></div>
+    </div>
+
+    <div class="all">
+        <div id="header">Správa komponentů</div>
+        
+        <div id="button-list">
+            <a href="{{ url_for('web.table_add') }}" class="btn-action">Přidej</a>
+            <a href="{{ url_for('web.table_del') }}" class="btn-action">Odstraň</a>
+            <a href="{{ url_for('web.table_upd') }}" class="btn-action">Změň</a>
+            <a href="{{ url_for('web.table_show') }}" class="btn-action">Zobraz</a>
+            <a href="{{ url_for('web.build_del') }}" class="btn-action">Smazat Sestavu</a>
+        </div>
+    </div>
+</body>
+</html>

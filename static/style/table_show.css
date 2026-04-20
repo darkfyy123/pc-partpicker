@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+.container-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-column {
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.search-card label {
+    display: block;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #4A90E2;
+}
+
+
+.main-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow-x: auto; 
+}
+
+
+.component-table {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.component-table thead th {
+    background-color: #fcfcfc;
+    padding: 15px;
+    text-align: left;
+    font-size: 0.7rem;
+    color: #999;
+    border-bottom: 2px solid #f0f0f0;
+    white-space: nowrap;
+}
+
+.component-table tbody td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #f9f9f9;
+    font-size: 0.9rem;
+}
+
+.component-table tbody tr:hover {
+    background-color: #f2f8ff;
+}
+
+.empty-msg {
+    text-align: center;
+    color: #aaa;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+
+#menu {
+    position: fixed; top: 20px; right: 20px; width: 35px; height: 35px;
+    background-color: #333; border-radius: 6px; display: flex; 
+    align-items: center; justify-content: center; z-index: 1000;
+}
+#menu img { width: 18px; filter: invert(1); }
+
+#sign {
+    position: fixed; bottom: 10px; right: 20px; color: gray; opacity: 0.3;
+    font-size: 11px;
+}

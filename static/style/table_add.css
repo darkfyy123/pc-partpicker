@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1, #header {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+
+.all {
+    max-width: 600px; 
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+
+#basic, #info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    width: 100%;
+}
+
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #b3d4ff;
+}
+
+#cpu, #gpu, #mb, #ram, #psu, #fan, #case, #drive {
+    display: none;
+    width: 100%;
+}
+
+
+#info div {
+    line-height: 2.5; 
+}
+
+
+#add {
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#add:hover {
+    background-color: #444;
+}
+
+
+#menu {
+    position: fixed; top: 16px; right: 16px; width: 32px; height: 32px;
+    background-color: #333; border-radius: 4px;
+}
+#menu img { width: 100%; filter: invert(1); }
+
+#sign {
+    position: fixed; bottom: 10px; right: 20px; color: gray; opacity: 0.3;
+}
+
+
+#alert-msg {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    z-index: 6000;
+}

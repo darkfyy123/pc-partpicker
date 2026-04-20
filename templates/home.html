@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/static/style/home.css">
+</head>
+<body>
+
+<div class="container">
+  <a href="{{ url_for('web.index') }}" class="card">
+    <div class="icon-box">
+      <img src="/static/img/PC.png" alt="PartPicker" class="large-icon">
+    </div>
+    <span class="label">PartPicker</span>
+  </a>
+
+  <a href="{{ url_for('web.builds_load') }}" class="card">
+    <div class="icon-box">
+      <img src="/static/img/Page.jpg" alt="Build" class="large-icon">
+    </div>
+    <span class="label">Build</span>
+  </a>
+
+   <a href="{{ url_for('web.builds_edit') }}" class="card">
+    <div class="icon-box">
+      <img src="/static/img/Edit.png" alt="Edit" class="large-icon">
+    </div>
+    <span class="label">Edit</span>
+  </a>
+</div>
+
+
+<div id="sign">
+  <p>Vít Kotinský, P4</p>
+</div>
+
+</body>
+</html>
