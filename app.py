@@ -5,6 +5,9 @@ from sqlalchemy.orm import sessionmaker
 from route_template import template
 from route_func import function
 from models import GPU, CPU, RAM, MB, CASE, DRIVE, PSU, FAN, BUILD
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -16,7 +19,7 @@ engine = create_engine(f"sqlite:///{db_path}")
 Session = sessionmaker(bind=engine)
 
 
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-key')
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 app.register_blueprint(template)
 app.register_blueprint(function)
